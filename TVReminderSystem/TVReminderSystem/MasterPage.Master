@@ -1,0 +1,108 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs"
+    Inherits="TVReminderSystem.MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>TV Reminder System</title>
+    <link rel="StyleSheet" href="style.css" type="text/css" media="screen" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script type="text/javascript" src="/Scripts/links.js"></script>
+</head>
+<body onload="showLinks(); linkColours();">
+    <form id="form1" runat="server">
+    <div class="top_wrapper">
+        <div class="top_bar">
+            <div class="user_control">
+                <asp:Label ID="lblLoginStatus" runat="server" Text=""></asp:Label>
+                <asp:LoginStatus ID="LoginStatus1" runat="server" />
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="top_section">
+            <div class="logo">
+                <a href="Default.aspx" id="ctl00_A1" title="Krazy Games"></a>
+            </div>
+            <div class="right_header">
+                <div class="links">
+                    <div class="navigation">
+                        <a href="/Default.aspx" class="Home" id="Home" onmouseover="ShowContent('Home_subnav'); HideContent('Search_subnav'); HideContent('My_Account_subnav'); ">
+                            Home</a> <a href="/Search/Search.aspx" class="Search" id="Search" onmouseover="HideContent('Home_subnav'); ShowContent('Search_subnav');  HideContent('My_Account_subnav');">
+                                Search</a> <a href="/MyAccount/MyAccount.aspx" class="My_Account" id="My_Account"
+                                    onmouseover="HideContent('Home_subnav'); HideContent('Search_subnav'); ShowContent('My_Account_subnav');">
+                                    My Account</a>
+                    </div>
+                    <div class="sub_navigation" id="Home_subnav">
+                        <a href="/Default.aspx" class="home_sub" id="home_subnav_home">Home</a> <a href="/Home/About.aspx"
+                            class="home_sub" id="home_subnav_about">About</a> <a href="/Home/ContactUs.aspx"
+                                class="home_sub" id="home_subnav_help">Help</a> <a href="/Home/ContactUs.aspx" class="home_sub"
+                                    id="home_subnav_contactus">Contact Us</a>
+                    </div>
+                    <div class="sub_navigation" id="Search_subnav">
+                        <a href="/Search/Search.aspx" class="Search_sub" id="XboX_subnav_Search">Search By Name</a>
+                        <a href="/Search/CurrentShows.aspx" class="Search_sub" id="XboX_subnav_CurrentShows">
+                            Current Shows</a>
+                    </div>
+                    <div class="sub_navigation" id="My_Account_subnav">
+                        <a href="/MyAccount/MyAccount.aspx" class="My_Account_subnav" id="MyAccounts_subnav_MyAccounts">
+                            My Account</a> <a href="/MyAccount/MyShows.aspx" class="My_Account_subnav" id="MyAccounts_subnav_MyShows">
+                                My Subscriptions</a>
+                    </div>
+                </div>
+            </div>
+            <div class="searchbar">
+                <asp:TextBox ID="tbSearch" runat="server" onfocus="if(this.value=='Type here to search') {this.value=''}"
+                    onblur="if(this.value=='') {this.value='Type here to search'}" Text="Type here to search"
+                    Width="200"></asp:TextBox>
+                <asp:Button ID="btnSearch" runat="server" Text="Search" OnClick="btnSearch_Click"
+                    CausesValidation="false" />
+            </div>
+        </div>
+    </div>
+    <div class="middle_wrapper">
+        <div id="middle_content">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    <div class="bottom_wrapper">
+        <div class="bottom_bar">
+            <div class="bottom_links">
+                <h4>
+                    Useful Information</h4>
+                <a href="/Home/About.aspx">About Us</a>
+                <br />
+                <a href="/Home/ContactUs.aspx">Contact Us</a>
+                <br />
+                <a href="/Home/ContactUs.aspx">Terms and Conditions</a>
+            </div>
+            <div class="bottom_links">
+                <h4>
+                    Contact Us</h4>
+                <a href="/Home/ContactUs.aspx">Help</a>
+                <br />
+                <a href="/Home/ContactUs.aspx">Give us Feedback</a>
+            </div>
+            <div class="bottom_links">
+                <h4>
+                    Follow Us</h4>
+                <div class="social_links">
+                    <img src="/Images/icn-facebook.png" alt="Facebook" /><a href="#nogo" class="facebook">Facebook</a>
+                </div>
+                <div class="social_links">
+                    <img src="/Images/icn-twitter.png" alt="Twitter" /><a href="#nogo" class="twitter">Twitter</a>
+                </div>
+                <div class="social_links">
+                    <img src="/Images/icn-youtube.png" alt="YouTube" /><a href="#nogo" class="youtube">YouTube</a>
+                </div>
+                <div class="social_links">
+                    <img src="/Images/icn-googleplus.png" alt="Google Plus" /><a href="#nogo" class="googleplus">Google+</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

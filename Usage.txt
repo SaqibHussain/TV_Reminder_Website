@@ -1,0 +1,18 @@
+In order to run the application, please follow these steps:
+
+1. Open the CreateTables.sql script
+
+2. Run the first line to create the Database
+
+3. Run the Second Line to ensure you are using the correct Database
+
+4. Run the three create table statements
+
+5. Run the INSERT statements to insert sample data. Be sure to run the SET DATEFORMAT statement before inserting 
+   data into the tblTVShows Table.
+
+6. Navigate into the TVReminderSystem Folder and open the solution file to run the website. You can login with credentials
+   Provided within the database or create your own user.
+
+7. To run the updating and reminder program, navigate into the Updater folder and open the solution. Build and run the 
+   application. The program will automatically run updates every hour and reminders every 10 minutes.

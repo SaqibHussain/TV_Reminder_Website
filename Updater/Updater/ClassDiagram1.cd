@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="Updater.SendReminders">
+    <Position X="7.75" Y="1.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AEAAAIAIAAgAAAgAEAAAAAAAAAAAAAICABBAAAAAACA=</HashCode>
+      <FileName>SendReminders.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Updater.Program">
+    <Position X="10.5" Y="1.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAEAAAAAAAAAEAAAAAAAAAAAAAAABAAEAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Updater.UpdateShows">
+    <Position X="4.5" Y="1.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AQQAAQAAAAAIAAAEAAAAQAgACAAAAAwgAJAAAAAAAAA=</HashCode>
+      <FileName>UpdateShows.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

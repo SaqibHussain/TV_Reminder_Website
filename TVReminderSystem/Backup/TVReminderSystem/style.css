@@ -1,0 +1,68 @@
+﻿
+body {
+	background-image: url("Images/background_tile.png");
+	font-family:Segoe UI; font-size: 14px; color:#575757; line-height:normal; font-style:normal; font-weight:normal;
+}
+
+.top_wrapper { width:auto;  background-color:rgba(176,176,176, 0.5); border-bottom:1px solid #f5e74d; border-top:1px solid #f5e74d; margin-bottom:7px; }
+.top_bar { width:900px; margin:0 auto; text-align:left;  height:30px;}
+		.user_control { width: 300px; float:left; position:relative; top:40%; font-size:12px; }
+			.user_control a { margin: 0 0px 0 10px; color:#585858 ; text-decoration:none; }
+			.user_control a:hover { border-bottom:1px solid #FF0099; }
+/*
+		.user_control2 { width: 300px; float:right;  position:relative; top:20%; font-size:17px; text-align: right;}
+			.user_control2 a { margin: 0 0px 0 10px; color:#585858 ; text-decoration:none; }
+			.user_control2 a:hover { border-bottom:1px solid #FF0099; }
+*/
+.wrapper { width:900px; margin:0 auto; text-align:left; background-color:white; margin-bottom:7px;}
+	.topsection { height:auto; padding:0 0 0 0; background-color:white;}
+		.logo { float:left; background:url(Images/Logo.png) no-repeat; width:200px; height:50px; margin-top:15px;  }
+		.right_header { float: right;  width:auto;  }
+			.links { /*float:right;*/ width:auto; margin-top:5px; height:auto; }
+
+				.navigation {text-align:right; height:25px; padding:5px 0 0 0; color:#575757; clear:both; font-size:15px;width:auto;float:right}
+					.navigation a { color:#575757; margin:0 0px 0 15px; text-decoration:none;}
+					.navigation .Home:hover { border-bottom:2px solid #00BCF2; }
+					.navigation .Search:hover { border-bottom:2px solid #FF8C0D;}
+					.navigation .My_Account:hover { border-bottom:2px solid #f00;}
+
+				.sub_navigation {text-align:right; height:25px; padding:0 0 0 0; color:#575757; clear:both; font-size:15px;width:700px;float:right}
+					.sub_navigation a { color:#575757; margin:0 0px 0 15px; text-decoration:none;}
+					.sub_navigation .home_sub:hover { border-bottom:2px solid #00BCF2; }
+					.sub_navigation .Search_sub:hover { border-bottom:2px solid #FF8C0D; }
+					.sub_navigation .My_Account_subnav:hover { border-bottom:2px solid #f00; }
+	.searchbar { clear:both; }
+
+.middle_wrapper { width:900px; margin:0 auto; text-align:left; background-color:none;  margin-bottom: 7px; overflow:hidden; }
+    .middle_content { height:auto; width:auto; background-color:White; padding:5px; }
+        .middle_content h4 { margin:0; }
+    	.side_navigation_bar  { width:200px; float:left; text-align:left;  height:auto; background-color:white; }
+    	.side_navigation_bar h4 { margin: 0; text-align:center; padding-bottom:3px;}
+    	
+    	    .main_content { margin-left:5px; width:695px; text-align:left;  height:auto; background-color:white; float:left; }
+    	    #content { margin:5px 5px 5px 5px; }
+
+.bottom_wrapper { width:auto; background-color:rgba(176,176,176, 0.5); border-bottom:1px solid #f5e74d; border-top:1px solid #f5e74d; }
+	.bottom_bar { width:900px; margin:0 auto; text-align:left; overflow:hidden; padding-bottom: 5px;}
+		.bottom_links { width:25%; float:left; }
+			.bottom_links h4 { margin: 0;}
+			.bottom_links a { color:#575757; text-decoration:none; } 
+			.bottom_links a:hover { border-bottom:1px solid #FF0099; }
+			.bottom_links .social_links {  background-color:rgba(88,88,88, 0.3); margin-bottom: 10px; width: 100px;; padding:3px; height:25px;}
+			.bottom_links .facebook { padding-left: 5px; position:relative; bottom:25%; }
+			.bottom_links .twitter {   padding-left: 5px; position:relative; bottom:25%;  }
+			.bottom_links .youtube {   padding-left: 5px; position:relative; bottom:25%; }
+			.bottom_links .googleplus {  padding-left: 5px; position:relative; bottom:25%; }
+			
+			
+
+/*Login Page */
+.login_container { width:50%; float:left;}
+.login_heading { width:100%; text-align:center; }
+#clearer { visibility:hidden;}
+
+/* Login Control ascx */
+.control_holder { margin: 0 auto; }
+.login_text { text-align:right;  }
+#ContentPlaceHolder1_Login1_lblLoginCheck { color:Red; }
+
