@@ -247,12 +247,12 @@ namespace Updater
         //Method to send a text
         public static void sendText(string number, string showName)
         {
-            string ACCOUNT_SID = "AC6a6bea390f6a94e33a4d18bf4badcadf";
-            string AUTH_TOKEN = "97ee5e05ba245d3d84eb7b13093954d5";
+            string ACCOUNT_SID = "****************************";
+            string AUTH_TOKEN = "***********************";
 
             TwilioRestClient client = new TwilioRestClient(ACCOUNT_SID, AUTH_TOKEN);
 
-            client.SendSmsMessage("+441158242661", number, "This is your reminder for " + showName + ", which is set to air in less than 24 hours!");
+            client.SendSmsMessage("**************1", number, "This is your reminder for " + showName + ", which is set to air in less than 24 hours!");
         }
     }
 }
